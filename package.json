@@ -1,0 +1,10 @@
+{
+  "main": "target/backend/backend/main.js",
+  "scripts": {
+    "full-dev": "rimraf target && tsc --project backend && cd frontend && npm run build && cd .. && electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.2.2",
+    "rimraf": "^5.0.5"
+  }
+}
